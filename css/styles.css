@@ -17,9 +17,11 @@
   .logo img{
     display: flex;
     justify-content: flex-start;
-    width: 30%;
+    max-width: 200px; 
+    height: auto; 
     cursor: pointer;
-    padding: 3% 4% 0%;
+    padding: 0;
+    margin: 15px 15px;
   }
   
   .navbar {
@@ -27,6 +29,7 @@
     justify-content: space-between;
     align-items: center; 
     padding: 0px 1%;
+    margin-right: 10px;
   }
   
   .nav-links {
