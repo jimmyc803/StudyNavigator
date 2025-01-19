@@ -8,34 +8,45 @@
   
   /* Hero Section */
   .hero {
-    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    background: linear-gradient(135deg, #7591b1, #466157);
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding-bottom: 60px;
+  }
+
+  .logo img{
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+    cursor: pointer;
+    padding: 3% 4% 0%;
   }
   
   .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: -10px 20px;
-    margin-top: -25px;
+    align-items: center; 
+    padding: 0px 1%;
   }
   
   .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+    align-items: baseline;
+      
   }
   
   .nav-links a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    margin-right: 10px;
   }
   
   .hero-content {
     margin-top: 50px;
+    padding: 7% 0% 10%;
   }
   
   .hero-content h1 {
@@ -112,8 +123,8 @@
   footer {
     text-align: center;
     padding: 20px;
-    background-color: #4a90e2;
-    color: white;
+    background-color: white;
+    color: black;
   }
 
   /* Login and Signup*/
