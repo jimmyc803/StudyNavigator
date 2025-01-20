@@ -97,6 +97,13 @@
     height: auto;
     margin-bottom: 10px;
   }
+
+  .card a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+  }
   
   /* How It Works Section */
   .how-it-works {

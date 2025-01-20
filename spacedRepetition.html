@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaced Repetition</title>
+    <link rel="stylesheet" href="css/spacedRepStyle.css">
+    <link rel="stylesheet" href="css/studyMethods.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">StudyNavigator</a>
+        <nav>
+            <button id="dashboard-btn">Dashboard</button>
+            <button id="view-all-btn">View All Flashcards</button>
+            <button id="create-btn">Create Flashcards</button>
+            <button id="review-btn">Start Reviewing</button>
+        </nav>
+      </header>
+    
+      <main>
+        <section id="dashboard">
+          <h2>Dashboard</h2>
+          <div id="progress">You have X cards to review today!</div>
+          <canvas id="progress-chart"></canvas>
+        </section>
+    
+        <section id="flashcard-creation" class="hidden">
+          <h2>Create Flashcards</h2>
+          <form id="flashcard-form">
+            <label for="question">Question:</label>
+            <textarea id="question" required></textarea>
+    
+            <label for="answer">Answer:</label>
+            <textarea id="answer" required></textarea>
+    
+            <button type="submit">Add Flashcard</button>
+          </form>
+        </section>
+    
+        <section id="review-session" class="hidden">
+            <h2>Review Flashcards</h2>
+            <div id="flashcard">
+              <p id="question-display">[Flashcard Question]</p>
+              <button id="flip-btn">Flip</button>
+              <p id="answer-display" class="hidden">[Flashcard Answer]</p>
+            </div>
+            <div id="feedback">
+              <button class="feedback-btn" data-difficulty="easy">Easy</button>
+              <button class="feedback-btn" data-difficulty="moderate">Moderate</button>
+              <button class="feedback-btn" data-difficulty="hard">Hard</button>
+            </div>
+          </section>          
+      </main>
+
+      <!-- View All Flashcards Section -->
+    <section id="view-all-cards" class="hidden">
+        <h2>All Flashcards</h2>
+        <ul id="flashcard-list">
+        <!-- Flashcards will be displayed here -->
+        </ul>
+        <button id="back-to-dashboard">Back to Dashboard</button>
+    </section>
+
+    <!-- Edit Flashcard Popup -->
+<div id="edit-popup" class="popup hidden">
+    <div class="popup-content">
+        <h2>Edit Flashcard</h2>
+        <form id="edit-form">
+            <label for="edit-question">Question</label>
+            <input type="text" id="edit-question" required>
+            
+            <label for="edit-answer">Answer</label>
+            <input type="text" id="edit-answer" required>
+            
+            <div class="popup-buttons">
+                <button type="button" id="save-edit-btn">Save Changes</button>
+                <button type="button" id="cancel-edit-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+    <script src="js/spacedRep.js"></script>
+</body>
+</html>
